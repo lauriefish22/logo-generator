@@ -1,4 +1,4 @@
-import { default as inquirer } from "inquirer";
+const inquirer = require('inquirer');
 
 
 const questions = [
@@ -56,3 +56,4 @@ function init() {
 
         })
 }
+init();
