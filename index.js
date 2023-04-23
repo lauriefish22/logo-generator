@@ -68,26 +68,32 @@ function init() {
             let shape;
             switch (response.shape) {
                 case 'Circle':
-                    shape = new Circle(response.shapeColor)
+                    shape = new Circle(response.shapeColor, response.textColor, response.text)
                     break;
+
+
 
                 case 'Square':
-                    shape = new Square(response.shapeColor)
-
+                    shape = new Square(response.shapeColor, response.textColor, response.text)
                     break;
 
+
+
+
                 case 'Triangle':
-                    shape = new Triangle(response.shapeColor)
+                    shape = new Triangle(response.shapeColor, response.textColor, response.text)
                     break;
             }
 
-
-
-            fs.writeFile('./examples/logo.svg', (response.shapeColor), (err) =>
+            fs.writeFile('./examples/logo.svg', shape.render(), (err) =>
                 err ? console.error(err) : console.log("Generated logo.svg"))
+
+
+
+
         });
-    //console.log(shape.render());
-    //const makeShape = generateMarkdown(response);
+
+
 
 }
 init();
