@@ -51,6 +51,16 @@ const questions = [
     }
 
 ]
+
+// function writeToFile(fileName, { Triangle, Circle, Square }) {
+//     fs.writeFile(fileName, { Triangle, Circle, Square }, (err) => {
+//         if (err) {
+//             console.log(err);
+//         }
+//     });
+// }
+
+
 function init() {
     inquirer.prompt(questions)
         .then((response) => {
@@ -70,7 +80,14 @@ function init() {
                     shape = new Triangle(response.shapeColor)
                     break;
             }
-            console.log(shape.render());
-        })
+
+
+
+            fs.writeFile('./examples/logo.svg', (response.shapeColor), (err) =>
+                err ? console.error(err) : console.log("Generated logo.svg"))
+        });
+    //console.log(shape.render());
+    //const makeShape = generateMarkdown(response);
+
 }
 init();
