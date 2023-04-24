@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const { Triangle, Circle, Square } = require('./lib/shapes.js');
 
-
+//User questions using Inquirer
 const questions = [
     {
         type: 'input',
@@ -60,12 +60,13 @@ const questions = [
 //     });
 // }
 
-
+//function to start questions and also print
 function init() {
     inquirer.prompt(questions)
         .then((response) => {
             console.log(response);
             let shape;
+            //changing colors and text to match user's input
             switch (response.shape) {
                 case 'Circle':
                     shape = new Circle(response.shapeColor, response.textColor, response.text)
@@ -84,7 +85,7 @@ function init() {
                     shape = new Triangle(response.shapeColor, response.textColor, response.text)
                     break;
             }
-
+            //function to create the svg image
             fs.writeFile('./examples/logo.svg', shape.render(), (err) =>
                 err ? console.error(err) : console.log("Generated logo.svg"))
 
