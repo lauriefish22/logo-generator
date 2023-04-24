@@ -1,3 +1,2 @@
-<svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" x="100" y="100" fill = "blue"/>
-        <text x="100" y="100" fill="white" font-size="24" text-anchor="middle" dominant-baseline="middle">rrr</text>
-      </svg>
+<svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="100,50 50,150 150,150" fill="white" /><text x="100" y="105" fill="black" font-size="24" text-anchor="middle" dominant-baseline="middle">www</text>
+        </svg>
