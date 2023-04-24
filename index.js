@@ -52,13 +52,7 @@ const questions = [
 
 ]
 
-// function writeToFile(fileName, { Triangle, Circle, Square }) {
-//     fs.writeFile(fileName, { Triangle, Circle, Square }, (err) => {
-//         if (err) {
-//             console.log(err);
-//         }
-//     });
-// }
+
 
 //function to start questions and also print
 function init() {
@@ -91,10 +85,7 @@ function init() {
 
 
 
-
         });
-
-
 
 }
 init();

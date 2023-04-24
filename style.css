@@ -1,0 +1,10 @@
+body {
+    margin: auto;
+    width: 640px;
+    padding: 50px;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+}
