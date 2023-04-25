@@ -2,7 +2,7 @@
 
 ## Example
 
-![dist]()
+![logos](./Examples/all-logos.png)
 
 ## Video Demonstration
 
@@ -10,20 +10,20 @@
 
 ## Description
 
-This project enables the user to create a ReadMe file using only the command line. I created a series of questions using Inquirer along with NodeJS to allow the user to simply answer the questions to send an already formatted ReadMe. This makes a ReadMe file consistent and also makes it easier for the user to produce.
+This project enables the user to create an SVG logo using only the command line. By following a series of questions, the user can create in image that contains three letters while also choosing the shape and colors. This project also incorporated Jest testing and Inquirer to help with the questions.
 
 ## Technology Used and Credit
 
 -   [Inquirer]('https://www.npmjs.com/package/inquirer')
 -   [NodeJS]('https://nodejs.org/en')
 -   [FS]('https://www.w3schools.com/nodejs/nodejs_filesystem.asp')
--   [Jest]()
+-   [Jest]('https://jestjs.io/')
 
 ## Installations
 
-NodeJS
-Inquirer
-Jest
+-   NodeJS
+-   Inquirer
+-   Jest
 
 ## Code Example
 
@@ -44,4 +44,8 @@ This is a snippet of code using Jest to for testing
 
 ## Learning Points
 
-This was a great opportunity to learn just how NodeJs and Inquirer work and how it can simplify so many things. It was also a chance to practice using template literals as well as learning about fs.
+This was a great opportunity to have more practice using Inquirer and Node but add in testing as well. It was also interesting learning how to work with SVG images and it continues to blow my away by how much you can do using the terminal alone. It can be much more efficient to got this route with a number of applications.
+
+## Testing Example
+
+![lib](./lib/Screenshot%202023-04-24%20at%206.00.11%20PM.png)
